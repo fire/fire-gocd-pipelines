@@ -6,7 +6,7 @@
       }
    ],
    "group": "gamma",
-   "label_template": "godot-groups-editor-upload.${COUNT}",
+   "label_template": "godot-chibifire-editor-upload.${COUNT}",
    "materials": [
       {
          "ignore_for_scheduling": false,
@@ -16,7 +16,7 @@
          "type": "dependency"
       }
    ],
-   "name": "godot-groups-editor-upload",
+   "name": "godot-chibifire-editor-upload",
    "stages": [
       {
          "clean_workspace": true,

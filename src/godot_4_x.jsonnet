@@ -18,7 +18,7 @@ local enabled_groups_export_platforms = [groups_export.groups_export_configurati
 local all_gdextension_plugins = [groups_gdextension.groups_gdextension_plugins[x] for x in ['godot_vive_pro_eye_face']];
 
 local godot_template_chibifire_editor = 'godot-chibifire-editor';
-local godot_template_chibifire_editor_export = 'godot-groups-editor-upload';
+local godot_template_chibifire_editor_export = 'godot-chibifire-editor-upload';
 local godot_template_groups = 'groups-export';
 local godot_cpp_pipeline = 'gdextension-cpp';
 local godot_gdextension_pipelines = [plugin_info.pipeline_name for plugin_info in all_gdextension_plugins];
