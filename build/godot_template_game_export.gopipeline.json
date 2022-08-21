@@ -23,7 +23,7 @@
          "type": "dependency"
       }
    ],
-   "name": "groups-export",
+   "name": "game-export",
    "stages": [
       {
          "clean_workspace": false,
@@ -173,7 +173,7 @@
                      "destination": "",
                      "is_source_a_file": false,
                      "job": "windowsJob",
-                     "pipeline": "groups-export",
+                     "pipeline": "game-export",
                      "source": "export_windows",
                      "stage": "exportStage",
                      "type": "fetch"
@@ -201,7 +201,7 @@
                      "destination": "",
                      "is_source_a_file": false,
                      "job": "linuxDesktopJob",
-                     "pipeline": "groups-export",
+                     "pipeline": "game-export",
                      "source": "export_linuxbsd",
                      "stage": "exportStage",
                      "type": "fetch"

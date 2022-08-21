@@ -19,10 +19,10 @@ local all_gdextension_plugins = [groups_gdextension.groups_gdextension_plugins[x
 
 local godot_template_chibifire_editor = 'godot-chibifire-editor';
 local godot_template_chibifire_editor_export = 'godot-chibifire-editor-upload';
-local godot_template_groups = 'groups-export';
+local godot_template_game = 'game-export';
 local godot_cpp_pipeline = 'gdextension-cpp';
 local godot_gdextension_pipelines = [plugin_info.pipeline_name for plugin_info in all_gdextension_plugins];
-local itch_fire_template = [godot_template_chibifire_editor, godot_cpp_pipeline] + godot_gdextension_pipelines + [godot_template_chibifire_editor_export] + [godot_template_groups];
+local itch_fire_template = [godot_template_chibifire_editor, godot_cpp_pipeline] + godot_gdextension_pipelines + [godot_template_chibifire_editor_export] + [godot_template_game];
 
 local godot_pipeline(pipeline_name='',
                      godot_status='',
@@ -745,10 +745,10 @@ local godot_editor_export(
     )
   ),
 } + {
-  'godot_template_groups_export.gopipeline.json'
+  'godot_template_game_export.gopipeline.json'
   : std.prune(
     templates.godot_tools_pipeline_export(
-      pipeline_name=godot_template_groups,
+      pipeline_name=godot_template_game,
       pipeline_dependency=godot_template_chibifire_editor,
       itchio_login='ifiregames/chibifire-godot-4-custom-engine',
       project_git='https://github.com/fire/3d-platform-test-for-godot4.git',
