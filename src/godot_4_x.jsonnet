@@ -17,16 +17,12 @@ local enabled_stern_flowers_export_platforms = [stern_flowers_export.stern_flowe
 local enabled_groups_export_platforms = [groups_export.groups_export_configurations[x] for x in ['windows', 'linuxDesktop']];
 local all_gdextension_plugins = [groups_gdextension.groups_gdextension_plugins[x] for x in ['godot_vive_pro_eye_face']];
 
-local docker_pipeline = 'docker-groups';
-local docker_uro_pipeline = 'docker-uro';
-local docker_gocd_agent_pipeline = 'docker-gocd-agent-centos-8-groups';
 local godot_template_chibifire_editor = 'godot-chibifire-editor';
 local godot_template_chibifire_editor_export = 'godot-groups-editor-upload';
 local godot_template_groups = 'groups-export';
-local godot_template_groups_staging = 'groups-staging-export';
 local godot_cpp_pipeline = 'gdextension-cpp';
 local godot_gdextension_pipelines = [plugin_info.pipeline_name for plugin_info in all_gdextension_plugins];
-local itch_fire_template = [godot_template_groups_staging] + [docker_pipeline, docker_uro_pipeline, docker_gocd_agent_pipeline] + [godot_template_chibifire_editor, godot_cpp_pipeline] + godot_gdextension_pipelines + [godot_template_chibifire_editor_export] + [godot_template_groups];
+local itch_fire_template = [godot_template_chibifire_editor, godot_cpp_pipeline] + godot_gdextension_pipelines + [godot_template_chibifire_editor_export] + [godot_template_groups];
 
 local godot_pipeline(pipeline_name='',
                      godot_status='',
