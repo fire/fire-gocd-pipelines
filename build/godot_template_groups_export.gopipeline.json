@@ -13,7 +13,7 @@
          "destination": "g",
          "name": "project_git_sandbox",
          "type": "git",
-         "url": "git@gitlab.com:SaracenOne/groups.git"
+         "url": "https://github.com/fire/3d-platform-test-for-godot4.git"
       },
       {
          "ignore_for_scheduling": false,
@@ -181,7 +181,7 @@
                   {
                      "arguments": [
                         "-c",
-                        "butler push export_windows saracenone/groups-4x:windows-master --userversion $GO_PIPELINE_LABEL-`date --iso=seconds --utc`"
+                        "butler push export_windows ifiregames/chibifire-godot-4-custom-engine:windows-master --userversion $GO_PIPELINE_LABEL-`date --iso=seconds --utc`"
                      ],
                      "command": "/bin/bash",
                      "type": "exec",
@@ -209,7 +209,7 @@
                   {
                      "arguments": [
                         "-c",
-                        "butler push export_linuxbsd saracenone/groups-4x:linux-master --userversion $GO_PIPELINE_LABEL-`date --iso=seconds --utc`"
+                        "butler push export_linuxbsd ifiregames/chibifire-godot-4-custom-engine:linux-master --userversion $GO_PIPELINE_LABEL-`date --iso=seconds --utc`"
                      ],
                      "command": "/bin/bash",
                      "type": "exec",
