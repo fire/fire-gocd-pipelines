@@ -706,7 +706,7 @@ local godot_editor_export(
     pipeline_name=godot_template_chibifire_editor,
     godot_status='groups-4.0.0',
     godot_git='https://github.com/V-Sekai/godot.git',
-    godot_branch='groups-4.x',
+    godot_branch='groups-4.x-staging',
     gocd_group='gamma',
     godot_modules_git='https://github.com/V-Sekai/godot-modules-groups.git',
     godot_modules_branch='groups-modules-4.x',
