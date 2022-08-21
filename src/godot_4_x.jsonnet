@@ -750,7 +750,7 @@ local godot_editor_export(
     templates.godot_tools_pipeline_export(
       pipeline_name=godot_template_game,
       pipeline_dependency=godot_template_chibifire_editor,
-      itchio_login='ifiregames/chibifire-godot-4-custom-engine',
+      itchio_login='ifiregames/chibifire-godot-4-game',
       project_git='https://github.com/fire/3d-platform-test-for-godot4.git',
       project_branch='godot4',
       gocd_group='gamma',
