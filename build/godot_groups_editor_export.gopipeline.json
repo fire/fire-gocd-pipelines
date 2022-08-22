@@ -51,7 +51,7 @@
                   {
                      "arguments": [
                         "-c",
-                        "butler push export_windows ifiregames/chibifire-godot-4-custom-engine:windows-master --userversion `date +\"%Y-%m-%dT%H%M%SZ\" --utc`-$GO_PIPELINE_NAME"
+                        "echo push export_windows ifiregames/chibifire-godot-4-custom-engine:windows-master --userversion `date +\"%Y-%m-%dT%H%M%SZ\" --utc`-$GO_PIPELINE_NAME"
                      ],
                      "command": "/bin/bash",
                      "type": "exec",
@@ -79,7 +79,7 @@
                   {
                      "arguments": [
                         "-c",
-                        "butler push export_linuxbsd ifiregames/chibifire-godot-4-custom-engine:linux-master --userversion `date +\"%Y-%m-%dT%H%M%SZ\" --utc`-$GO_PIPELINE_NAME"
+                        "echo push export_linuxbsd ifiregames/chibifire-godot-4-custom-engine:linux-master --userversion `date +\"%Y-%m-%dT%H%M%SZ\" --utc`-$GO_PIPELINE_NAME"
                      ],
                      "command": "/bin/bash",
                      "type": "exec",
