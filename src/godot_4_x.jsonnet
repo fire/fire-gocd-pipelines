@@ -33,7 +33,7 @@ local godot_pipeline(pipeline_name='',
                      godot_modules_branch='',
                      godot_engine_platforms=enabled_engine_platforms,
                      godot_template_platforms=enabled_template_platforms,
-                     first_stage_approval=null,
+                     first_stage_approval=true,
                      timer_spec="* * * * * ?",
   ) = {
   name: pipeline_name,

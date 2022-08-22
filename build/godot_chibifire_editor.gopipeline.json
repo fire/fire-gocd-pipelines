@@ -27,6 +27,7 @@
    "name": "godot-chibifire-editor",
    "stages": [
       {
+         "approval": true,
          "clean_workspace": true,
          "jobs": [
             {
