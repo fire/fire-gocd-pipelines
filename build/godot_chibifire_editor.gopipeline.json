@@ -153,7 +153,7 @@
                   {
                      "arguments": [
                         "-c",
-                        "cp bin/godot.windows.opt.tools.64.exe bin/windows_debug_x86_64.exe && cp bin/godot.windows.opt.tools.64.exe bin/windows_release_x86_64.exe &&  bin/windows_release_x86_64.exe"
+                        "cp bin/godot.windows.opt.tools.64.exe bin/windows_debug_x86_64.exe && cp bin/godot.windows.opt.tools.64.exe bin/windows_release_x86_64.exe && echo bin/windows_release_x86_64.exe"
                      ],
                      "command": "/bin/bash",
                      "type": "exec",
